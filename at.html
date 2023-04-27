@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<title>Problema para ser solucionado com Vetores </title>
-	<h1> Estoque de aparelhos eletrônicos</h1>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <title> Problema para ser solucionado com Vetores </title>
 </head>
 <body>
-	<form>
-		 Quantos produtos tem no estoque:<input type="text" name="name"  id="produtosEstoque">
-		 <br>
-		 <input type="submit" id="botão1" onkeypress="enviar"> 
-		 <br>
-		 <br>
-
-		<input type="txt" id="produtosVendidos">
-	</form>
-
- <script src="at.js" defer=""></script>
+    <section>
+        <form id="estoque">
+            <p><h2> Quantidade de produtos em estoque e unidades vendidas: </h2></p>
+            <div id="produtos">
+                <div class="eletronicos">
+                    <p><h4>  Geladeira </h4></p>
+                    <p> No estoque: <input type="number" id="prod1"> </p>
+                    <p> Vendidos: <input type="number" id="vend1"> </p>
+                </div>
+                <div class="eletronicos">
+                    <p><h4> Microondas </h4></p>
+                    <p> No estoque: <input type="number" id="prod2"> </p>
+                    <p> Vendidos: <input type="nunber" id="vend2"> </p>
+                </div>
+                <div class="eletronicos">
+                    <p><h4> Pc </h4></p>
+                    <p> No estoque: <input type="number" id="prod3"> </p>
+                    <p> Vendidos: <input type="number" id="vend3"> </p>
+                </div>
+                <div class="eletronicos">
+                    <p><h4> Monitor </h4></p>
+                    <p> No estoque: <input type="number" id="prod4"> </p>
+                    <p> Vendidos: <input type="number" id="vend4"> </p>
+                </div>
+                <div class="eletronicos">
+                    <p><h4> Caixas de som </h4></p>
+                    <p> No estoque: <input type="number" id="prod5"> </p>
+                    <p> Vendidos: <input type="number" id="vend5"> </p>
+                </div>
+            </div>
+            <button type="button" onclick="executar()"> Selecionar </button>
+            <p><h3> Quantidade restante de cada produto: </h3></p>
+            <div id="resto">
+                <div class="sobra"> 
+                    <p><h4> Geladeira </h4><div id="rest1">  </div></p>
+                </div>
+                <div class="sobra">
+                    <p><h4> Microondas </h4><div id="rest2">  </div> </p>
+                </div>
+                <div class="sobra">
+                    <p><h4> Pc </h4><div id="rest3">  </div> </p>
+                </div>
+                <div class="sobra">
+                    <p><h4> Monitor </h4><div id="rest4">  </div> </p>
+                </div>
+                <div class="sobra">
+                    <p><h4> Caixas de som </h4><div id="rest5">  </div> </p>
+                </div>
+            </div>
+            </p>
+        </form>
+    </section>
+    <footer></footer>
+    <script src="at.js"></script>
 </body>
 </html>
